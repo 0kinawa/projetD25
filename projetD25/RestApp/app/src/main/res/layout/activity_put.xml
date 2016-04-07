@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.univtln.sgrassell418.restapp.activities.PutActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an event"
+        android:textAlignment="center"
+        android:id="@+id/txt_head"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/entry_activity"
+        android:layout_alignBottom="@+id/txt_activity"
+        android:layout_alignRight="@+id/txt_head"
+        android:layout_alignEnd="@+id/txt_head"
+        android:layout_toRightOf="@+id/txt_activity"
+        android:layout_toEndOf="@+id/txt_activity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity"
+        android:id="@+id/txt_activity"
+        android:layout_above="@+id/entry_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="83dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/txt_date"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/entry_date"
+        android:layout_alignBottom="@+id/txt_date"
+        android:layout_alignRight="@+id/entry_activity"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/entry_activity"
+        android:layout_alignStart="@+id/entry_activity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/txt_time"
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/btn_put"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/entry_time"
+        android:layout_alignBottom="@+id/txt_time"
+        android:layout_alignRight="@+id/entry_date"
+        android:layout_alignEnd="@+id/entry_date"
+        android:layout_alignLeft="@+id/entry_date"
+        android:layout_alignStart="@+id/entry_date" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create event"
+        android:id="@+id/btn_put"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="putEvent"/>
+
+</RelativeLayout>
